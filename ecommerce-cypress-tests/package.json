@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce-cypress-tests",
+  "version": "1.0.0",
+  "description": "Automated E2E test suite for an e-commerce platform using Cypress",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "test:smoke": "cypress run --spec \"cypress/e2e/auth/**,cypress/e2e/journey/**\"",
+    "test:auth": "cypress run --spec \"cypress/e2e/auth/**\"",
+    "test:catalog": "cypress run --spec \"cypress/e2e/catalog/**\"",
+    "test:cart": "cypress run --spec \"cypress/e2e/cart/**\"",
+    "test:checkout": "cypress run --spec \"cypress/e2e/checkout/**\"",
+    "test:chrome": "cypress run --browser chrome",
+    "test:mobile": "cypress run --config viewportWidth=390,viewportHeight=844"
+  },
+  "devDependencies": {
+    "cypress": "^16.2.1"
+  }
+}
